@@ -1,0 +1,44 @@
+Set-location "Z:\Public\!Выгрузки\Терминал1"
+$date = (Get-Date).AddDays(-2)
+Get-ChildItem -Path Z:\Public\!Выгрузки\Терминал1 | where {!$_.PSIsContainer} |
+foreach {
+   if ($_.LastWriteTime -lt $date) {
+            Remove-Item $_ 
+   }
+}
+
+Set-location "Z:\Public\!Выгрузки\Терминал2"
+$date = (Get-Date).AddDays(-2)
+Get-ChildItem -Path Z:\Public\!Выгрузки\Терминал2 | where {!$_.PSIsContainer} |
+foreach {
+   if ($_.LastWriteTime -lt $date) {
+            Remove-Item $_ 
+   }
+}
+
+Set-location "Z:\Public\!Выгрузки\Терминал3"
+$date = (Get-Date).AddDays(-2)
+Get-ChildItem -Path Z:\Public\!Выгрузки\Терминал3 | where {!$_.PSIsContainer} |
+foreach {
+   if ($_.LastWriteTime -lt $date) {
+            Remove-Item $_ 
+   }
+}
+
+Set-location "Z:\Public\!Выгрузки\Терминал4"
+$date = (Get-Date).AddDays(-2)
+Get-ChildItem -Path Z:\Public\!Выгрузки\Терминал4 | where {!$_.PSIsContainer} |
+foreach {
+   if ($_.LastWriteTime -lt $date) {
+            Remove-Item $_ 
+   }
+}
+
+Set-location "Z:\Public\!Выгрузки\Терминал5"
+$date = (Get-Date).AddDays(-2)
+Get-ChildItem -Path Z:\Public\!Выгрузки\Терминал5 | where {!$_.PSIsContainer} |
+foreach {
+   if ($_.LastWriteTime -lt $date) {
+            Remove-Item $_ 
+   }
+}
